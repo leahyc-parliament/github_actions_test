@@ -43,5 +43,5 @@ jobs:
           git config --global user.name "leahyc-parliament"
           git config --global user.email "leahyc@parliament.uk"
           git add .
-          git commit -m "Add generated RDS file [skip ci]" || echo "No changes to commit"
+          git commit -m "Add generated csv file" || echo "No changes to commit"
           git push
