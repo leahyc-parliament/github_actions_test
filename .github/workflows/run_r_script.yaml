@@ -1,10 +1,12 @@
 name: GitHub Actions Test
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: 
-  schedule:
-    - cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
 
-# on: [push]
+# on: 
+#   schedule:
+#     - cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
+
+
+on: [push]
 
 jobs:
   Explore-GitHub-Actions:
@@ -31,3 +33,11 @@ jobs:
       - name: Run r script
         run: | 
           Rscript write_rds.R
+
+      - name: Commit and push rds to repo
+        run: |
+          git config --global user.name "leahyc-parliament"
+          git config --global user.email "leahyc@parliament.uk"
+          git add .
+          git commit -m "Add generated RDS file [skip ci]" || echo "No changes to commit"
+          git push
