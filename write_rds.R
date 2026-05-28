@@ -1,5 +1,5 @@
 rds <- data.frame(
-  name = c("Sashimi", "Mochi", "Maki"),
+  name = c("Soosh", "Mochi", "Mooks"),
   breed = c("Ragdoll", "Ragdoll", "Maine coon"),
   timestamp = (Sys.time())
 )
