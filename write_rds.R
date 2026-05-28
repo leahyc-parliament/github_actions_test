@@ -1,6 +1,7 @@
 rds <- data.frame(
-  forename = c("Catherine", "Mochi", "Maki"),
-  surname = c("Prior", "Prior", "Prior")
+  name = c("Sashi", "Mochi", "Maki"),
+  breed = c("Ragdoll", "Ragdoll", "Maine coon"),
+  timestamp = (Sys.time())
 )
 
 write.csv(rds, "actions_test_data.csv", row.names = FALSE)
