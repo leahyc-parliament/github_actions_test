@@ -1,5 +1,5 @@
 rds <- data.frame(
-  name = c("Sash", "Mochi", "Mak"),
+  name = c("Sash", "Moch", "Mak"),
   breed = c("Ragdoll", "Ragdoll", "Maine coon"),
   timestamp = (Sys.time())
 )
@@ -7,3 +7,4 @@ rds <- data.frame(
 write.csv(rds, "actions_test_data.csv", row.names = FALSE)
 # saveRDS(rds, "actions_test_data.rds")
 # saveRDS(rds, "H:/Statistics/Code projects/github_actions_test_data/actions_test_data.rds")
+
