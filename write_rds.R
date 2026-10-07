@@ -1,6 +1,6 @@
 rds <- data.frame(
-  Name = c("Sashi", "Mochi", "Maki", "Tempura"),
-  Breed = c("Ragdoll", "Ragdoll", "Maine coon", "British Longhair")
+  Name = c("Sashi", "Mochi", "Maki", "Tempura", "Sushi"),
+  Breed = c("Ragdoll", "Ragdoll", "Maine coon", "British Longhair", "Bengal")
   # timestamp = (Sys.time())
 )
 
